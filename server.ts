@@ -19,6 +19,7 @@ import LeetcodesController from './controllers/LeetcodesController';
 import SolutionsController from './controllers/SolutionsController';
 
 import mongoose from "mongoose";
+import JobsController from './controllers/JobsController';
 const session = require("express-session");
 
 var cors = require('cors')
@@ -62,6 +63,7 @@ app.get('/', (req: Request, res: Response) =>
 // create RESTful Web service API
 const leetcodesController = LeetcodesController.getInstance(app);
 const solutionsController = SolutionsController.getInstance(app);
+const jobsController = JobsController.getInstance(app);
 
 /**
  * Start a server listening at port 4000 locally
