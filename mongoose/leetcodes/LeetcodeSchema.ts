@@ -6,7 +6,9 @@ const LeetcodeSchema = new mongoose.Schema<Leetcodes>({
     name: { type: String },
     intro: { type: String, default: "" },
     link: { type: String },
-    tags: {},
+    tags: [],
+    // importance: [],
+    // repeat: [],
     oa: { type: Boolean, default: false },
     term: { type: String, default: "" }
 }, { collection: "leetcodes" });

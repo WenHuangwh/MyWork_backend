@@ -33,13 +33,15 @@ export default class LeetcodesController implements LeetcodesControllerI {
         LeetcodesController.leetcodesDao.getLeetcodesByTag(req.body.tag)
             .then((leetcodes: Leetcodes[]) => res.json(leetcodes));
 
-
-    createLeetcode = async (req: Request, res: Response) =>
+    createLeetcode = async (req: Request, res: Response) => {
+        // req.body.importance = {};
+        // req.body.repeat = {};
         LeetcodesController.leetcodesDao.createLeetcode(req.body)
-            .then((leetcode: Leetcodes) => res.json(leetcode));;
+            .then((leetcode: Leetcodes) => res.json(leetcode));
+    }
 
     updateLeetcode = async (req: Request, res: Response) =>
-        LeetcodesController.leetcodesDao.updateLeetcode(req.params.mongoId, req.body)
+        LeetcodesController.leetcodesDao.updateLeetcode(req.params.mid, req.body)
             .then((leetcode: Leetcodes) => res.json(leetcode));
 
 }

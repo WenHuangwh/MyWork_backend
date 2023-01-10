@@ -5,6 +5,9 @@ export default interface Leetcodes {
     link: String,
     tags: Array<String>,
 
+    // importance: [],
+    // repeat: [],
+
     oa?: boolean,
     term?: String
 };

@@ -7,6 +7,7 @@ export default interface Solutions {
     longAnswer: String,
     code: String,
     ratingImportance: Number,
-    ratingRepeat: Number
+    ratingRepeat: Number,
+    date: Date
 
 };
