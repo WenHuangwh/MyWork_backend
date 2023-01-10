@@ -42,6 +42,7 @@ export default class SolutionsController implements SolutionsControllerI {
         //         leetcode.repeat = ({ ...leetcode.repeat, userID: repeat });
         //         SolutionsController.leetcodesDao.updateLeetcode(leetcode._id, leetcode);
         //     });
+        req.body.date = new Date();
         SolutionsController.solutionsDao.createSolution(req.body)
             .then((solution: Solutions) => res.json(solution));
 
@@ -57,6 +58,7 @@ export default class SolutionsController implements SolutionsControllerI {
         //         leetcode.repeat = ({ ...leetcode.repeat, userID: repeat });
         //         SolutionsController.leetcodesDao.updateLeetcode(leetcode._id, leetcode);
         //     });
+        req.body.date = new Date();
         SolutionsController.solutionsDao.updateSolution(req.params.sid, req.body)
             .then((solution: Solutions) => res.json(solution));
     }

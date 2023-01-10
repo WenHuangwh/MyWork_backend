@@ -9,7 +9,8 @@ const SolutionSchema = new mongoose.Schema<Solutions>({
     longAnswer: { type: String, default: "" },
     code: { type: String, default: "" },
     ratingImportance: { type: Number, default: 2.5 },
-    ratingRepeat: { type: Number, default: 2.5 }
+    ratingRepeat: { type: Number, default: 2.5 },
+    date: { type: Date }
 }, { collection: "solutions" });
 
 export default SolutionSchema;
