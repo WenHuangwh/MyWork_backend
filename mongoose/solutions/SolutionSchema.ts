@@ -1,5 +1,5 @@
 import mongoose, { Schema } from "mongoose";
-import Solutions from "../../models/solutions/solutions";
+import Solutions from "../../models/solutions/Solutions";
 
 const SolutionSchema = new mongoose.Schema<Solutions>({
     uid: String,

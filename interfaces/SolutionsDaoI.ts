@@ -1,4 +1,4 @@
-import Solutions from "../models/solutions/solutions";
+import Solutions from "../models/solutions/Solutions";
 
 export default interface SolutionsDaoI {
     createSolution(solutions: Solutions): Promise<Solutions>;
