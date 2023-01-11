@@ -1,6 +1,6 @@
 import SolutionsDaoI from "../interfaces/SolutionsDaoI";
 import SolutionModel from "../mongoose/solutions/SolutionModel";
-import Solutions from "../models/solutions/solutions";
+import Solutions from "../models/solutions/Solutions";
 
 export default class SolutionsDao implements SolutionsDaoI {
     private static solutionsDao: SolutionsDao | null = null;
