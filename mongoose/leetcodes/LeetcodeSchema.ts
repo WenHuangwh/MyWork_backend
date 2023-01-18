@@ -10,6 +10,8 @@ const LeetcodeSchema = new mongoose.Schema<Leetcodes>({
     // importance: [],
     // repeat: [],
     oa: { type: Boolean, default: false },
-    term: { type: String, default: "" }
+    term: { type: String, default: "" },
+    bagu: { type: Boolean, default: false },
+    bq: { type: Boolean, default: false }
 }, { collection: "leetcodes" });
 export default LeetcodeSchema;
