@@ -24,14 +24,13 @@ export default class LeetcodesDao implements LeetcodesDaoI {
         )
 
     getAllLeetcodes = async (): Promise<Leetcodes[]> =>
-        LeetcodeModel.find({ oa: false })
+        LeetcodeModel.find()
             .exec();
 
     getLeetcodesByID = async (leetcode_id: String): Promise<any> =>
-        LeetcodeModel.find({ leetcode_id: leetcode_id, oa: false })
+        LeetcodeModel.find({ leetcode_id: leetcode_id })
             .exec();
 
     getLeetcodesByTag = async (tag: String): Promise<Leetcodes[]> =>
         LeetcodeModel.find({ tags: { $all: tag } }).exec()
-
 }

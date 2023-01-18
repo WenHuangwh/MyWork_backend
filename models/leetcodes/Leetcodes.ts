@@ -9,5 +9,7 @@ export default interface Leetcodes {
     // repeat: [],
 
     oa?: boolean,
-    term?: String
+    term?: String,
+    bagu: boolean,
+    bq: boolean
 };
